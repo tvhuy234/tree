@@ -1,0 +1,41 @@
+
+ul, #myUL {
+    list-style-type: none;
+  }
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  .root , .liRemove{
+    cursor: pointer;
+    user-select: none; 
+  }
+  .root:hover , .liRemove:hover{
+   color: red;
+}
+
+.hover{
+  color: red;
+}
+  
+
+
+  .root::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+
+  .root-down::before {
+    transform: rotate(90deg);
+  }
+  .nested {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+
+

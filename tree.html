@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="css/tree.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree</title>
+</head>
+
+<body>
+    <div>
+        <button id='add'>Add</button>
+        <button id='delete'>Delete</button>
+        <input class='item' type="text" name="item" id="item"> 
+        <button id ='rename'>Rename</button>
+        <p hidden id ='test'>x</p>
+        <p hidden id ='test2'>x</p>
+        <p hidden id ='test3'>x</p>
+
+
+
+        <ul class = 'menu'>
+            <li> <span id ='root1' class="root"><i class="fa fa-folder-o">A </i> </span>
+                <ul id="div1" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" class='nested'>
+                   
+                    <li class = 'liRemove' draggable="true" ondragstart="drag(this, event)"><i class="fa fa-folder-o">1</i></li>
+                    <li class = 'liRemove' draggable="true" ondragstart="drag(this, event)"><i class="fa fa-folder-o">2</i></li>
+                </ul>
+            </li>
+            <li > <span id ='root2'class="root"><i class="fa fa-folder-o">B</i></span>
+                <ul id="div2" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" class='nested'>
+                  
+                    <li class = 'liRemove' draggable="true" ondragstart="drag(this, event)"><i class="fa fa-folder-o">3</i></li>
+                    <li class = 'liRemove' draggable="true" ondragstart="drag(this, event)"><i class="fa fa-folder-o">4</i></li>
+                </ul>
+            </li>
+            <li> <span id ='root3'class="root"><i class="fa fa-folder-o">C</i></span>
+                <ul id="div3" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" class='nested'>
+                    
+                    <li class = 'liRemove' draggable="true" ondragstart="drag(this, event)"><i class="fa fa-folder-o">5</i></li>
+                    <li class = 'liRemove' draggable="true" ondragstart="drag(this, event)"><i class="fa fa-folder-o">6</i></li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+   
+    <script src="js/tree.js">
+
+    </script>
+</body>
+
+</html>
